@@ -34,9 +34,11 @@ use App\Http\Controllers\TablesController;
 
 // Route::get('', [Controller::class, 'index']);
 
+
+
 // DASHBOARDS //
-Route::get('/', [DashboardsController::class, 'index']);
-Route::get('index', [DashboardsController::class, 'index']);
+Route::get('/', [DashboardsController::class, 'index'])->name('dashboard');
+Route::get('index', [DashboardsController::class, 'index'])->name('dashboard');
 Route::get('index2', [DashboardsController::class, 'index2']);
 Route::get('index3', [DashboardsController::class, 'index3']);
 Route::get('index4', [DashboardsController::class, 'index4']);

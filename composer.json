@@ -7,11 +7,13 @@
     "require": {
         "php": "^8.2",
         "guzzlehttp/guzzle": "^7.9.2",
+        "laravel/fortify": "^1.25",
         "laravel/framework": "10.48.28",
         "laravel/jetstream": "^4.3",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.10.1",
-        "livewire/livewire": "^3.0"
+        "livewire/livewire": "^3.0",
+        "spatie/laravel-permission": "^6.15"
     },
     "require-dev": {
         "fakerphp/faker": "^1.24.1",
