@@ -4,6 +4,8 @@ use Laravel\Fortify\Features;
 
 return [
 
+
+   
     /*
     |--------------------------------------------------------------------------
     | Fortify Guard

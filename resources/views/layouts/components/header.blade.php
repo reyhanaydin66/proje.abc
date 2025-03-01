@@ -570,7 +570,14 @@
                                 <li><a class="dropdown-item border-bottom" href="{{url('mail')}}"><i class="fs-13 me-2 bx bx-comment"></i>Message</a></li>
                                 <li><a class="dropdown-item border-bottom" href="{{url('mail-settings')}}"><i class="fs-13 me-2 bx bx-cog"></i>Settings</a></li>
                                 <li><a class="dropdown-item border-bottom" href="{{url('faqs')}}"><i class="fs-13 me-2 bx bx-help-circle"></i>Help</a></li>
-                                <li><a class="dropdown-item" href="{{url('signin-cover')}}"><i class="fs-13 me-2 bx bx-arrow-to-right"></i>Log Out</a></li>
+                                <li>
+    <form method="POST" action="{{ route('logout') }}" x-data>
+        @csrf
+        <button type="submit" class="dropdown-item border-bottom">
+            <i class="fs-13 me-2 bx bx-arrow-to-right"></i>Log Out
+        </button>
+    </form>
+</li>
                             </ul>
                         </div>
                         <!-- End::header-element -->

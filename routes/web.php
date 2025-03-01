@@ -234,8 +234,10 @@ Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+
+    ])->group(function () {
+        // '/index' adresi için DashboardsController'ın 'index' metodunu çağırıyoruz
+        Route::get('/', [DashboardsController::class, 'index'])->name('dashboard');
+        Route::get('/index', [DashboardsController::class, 'index'])->name('dashboard');
+        
+    });
